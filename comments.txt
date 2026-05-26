@@ -1,0 +1,180 @@
+./app/src/main/java/com/example/Task.kt:    val priority: String, // "High", "Medium", "Low"
+./app/src/main/java/com/example/ui/theme/Type.kt:// Set of Material typography styles to start with
+./app/src/main/java/com/example/ui/theme/Color.kt:// Light Theme Colors
+./app/src/main/java/com/example/Supabase.kt:        supabaseUrl = "https://wzhnmhfekvuepbczszie.supabase.co",
+./app/src/main/java/com/example/Supabase.kt:                // Explicitly use SettingsSessionManager to leverage multiplatform-settings-no-arg
+./app/src/main/java/com/example/Supabase.kt:                // Fallback for Robolectric tests where StartupProvider doesn't initialize it
+./app/src/main/java/com/example/MainViewModel.kt:                        // ignore
+./app/src/main/java/com/example/MainViewModel.kt:                // Ignore for release
+./app/src/main/java/com/example/MainViewModel.kt:    // Settings
+./app/src/main/java/com/example/MainViewModel.kt:        // Also update start date if not set, or reset
+./app/src/main/java/com/example/MainViewModel.kt:                // Save name locally
+./app/src/main/java/com/example/MainViewModel.kt:                // Insert into users table
+./app/src/main/java/com/example/MainViewModel.kt:                    // ignore
+./app/src/main/java/com/example/MainViewModel.kt:                    // ignore
+./app/src/main/java/com/example/MainViewModel.kt:                // ignore
+./app/src/main/java/com/example/MainViewModel.kt:            // XP increases only when sessions are completed.
+./app/src/main/java/com/example/MainViewModel.kt:            // indices: 6 is today, 5 is yesterday, ..., 0 is 6 days ago
+./app/src/main/java/com/example/MainViewModel.kt:                    // Ignore
+./app/src/main/java/com/example/MainViewModel.kt:                    // Ignore
+./app/src/main/java/com/example/MainViewModel.kt:                    // Ignore
+./app/src/main/java/com/example/MainViewModel.kt:                    // Ignore for now
+./app/src/main/java/com/example/MainViewModel.kt:                    // Ignore
+./app/src/main/java/com/example/MainViewModel.kt:                    // Ignore for now
+./app/src/main/java/com/example/MainViewModel.kt:                    // Ignore
+./app/src/main/java/com/example/MainViewModel.kt:            // handle or ignore
+./app/src/main/java/com/example/MainViewModel.kt:            // handle or ignore
+./app/src/main/java/com/example/MainViewModel.kt:            // handle or ignore
+./app/src/main/java/com/example/MainViewModel.kt:            // handle or ignore
+./app/src/main/java/com/example/MainViewModel.kt:                // First time user, init profile
+./app/src/main/java/com/example/MainViewModel.kt:            // handle or ignore
+./app/src/main/java/com/example/MainViewModel.kt:        val validMins = minutes.coerceIn(1, 180) // simple sanity limit
+./app/src/main/java/com/example/MainViewModel.kt:                    // Break completed!
+./app/src/main/java/com/example/MainViewModel.kt:                    // Focus session completed!
+./app/src/main/java/com/example/MainViewModel.kt:                    // Record in database
+./app/src/main/java/com/example/MainViewModel.kt:                    // Determine break duration
+./app/src/main/java/com/example/MainViewModel.kt:                    // Ignore
+./app/src/main/java/com/example/MainViewModel.kt:                    // Ignore
+./app/src/main/java/com/example/MainViewModel.kt:            // Ignore
+./app/src/main/java/com/example/GeminiApiService.kt:// --- Common Data Classes ---
+./app/src/main/java/com/example/GeminiApiService.kt:// --- Retrofit Setup ---
+./app/src/main/java/com/example/GeminiApiService.kt:    private const val BASE_URL = "https://generativelanguage.googleapis.com/"
+./app/src/main/java/com/example/DailyReminderReceiver.kt:        // Reschedule for next day
+./app/src/main/java/com/example/NotificationHelper.kt:                // Ignore
+./app/src/main/java/com/example/NotificationHelper.kt:            calendar.add(Calendar.DAY_OF_YEAR, 1) // Schedule for next day if time has passed
+./app/src/main/java/com/example/NotificationHelper.kt:            // Fallback for missing exact alarm permission
+./app/src/main/java/com/example/NotificationHelper.kt:            1001, // fixed ID for break timer
+./app/src/main/java/com/example/NotificationHelper.kt:        val requestCode = 9999 // Fixed request code for daily reminder
+./app/src/main/java/com/example/NotificationHelper.kt:            calendar.add(Calendar.DAY_OF_YEAR, 1) // Schedule for next day if time has passed
+./app/src/main/java/com/example/Note.kt:    val type: String, // "Quick" or "Detailed"
+./app/src/main/java/com/example/ScheduleSlot.kt:    val startTime: String, // format: "HH:mm"
+./app/src/main/java/com/example/ScheduleSlot.kt:    val endTime: String,   // format: "HH:mm"
+./app/src/main/java/com/example/ScheduleSlot.kt:    val colorHex: String,  // hex string, e.g. "#00FFCC"
+./app/src/main/java/com/example/AmbientSoundManager.kt:            // For brown noise (Rain)
+./app/src/main/java/com/example/AmbientSoundManager.kt:            // For Lo-fi (chords/melody simulation)
+./app/src/main/java/com/example/AmbientSoundManager.kt:            var timePerNote = 44100 * 2 // 2 seconds per note
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            // Noise with low frequency amplitude modulation for waves
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            phase += 2.0 * PI * 0.1 / sampleRate // 0.1 Hz for wave swell
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            val swell = (sin(phase) + 1.0) / 2.0 // 0.0 to 1.0
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            // Base wind noise
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            // Occasional bird chirp
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            if (Random.nextDouble() > 0.99995 && noteIndex == 0) { // Trigger chirp
+./app/src/main/java/com/example/AmbientSoundManager.kt:                                // High pitched sine sweep
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            // Brown noise approximation
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            // add a little hiss
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            // Sine wave with a low pass filter vibe (soft sound)
+./app/src/main/java/com/example/AmbientSoundManager.kt:                            // add vinyl crackle
+./app/src/main/java/com/example/AmbientSoundManager.kt:                    // clamp
+./app/src/main/java/com/example/MainActivity.kt:// Removed AutoAwesome import
+./app/src/main/java/com/example/MainActivity.kt:                // Animation logic handled inside SplashScreen
+./app/src/main/java/com/example/MainActivity.kt:// --- Leaderboard ---
+./app/src/main/java/com/example/MainActivity.kt:// --- Rewards Shop ---
+./app/src/main/java/com/example/MainActivity.kt:        // Edit Username
+./app/src/main/java/com/example/MainActivity.kt:        // Notification Sound
+./app/src/main/java/com/example/MainActivity.kt:        // Break Reminder
+./app/src/main/java/com/example/MainActivity.kt:        // Daily Reminder Time
+./app/src/main/java/com/example/MainActivity.kt:        // Study Commitment Duration
+./app/src/main/java/com/example/MainActivity.kt:        // App Language
+./app/src/main/java/com/example/MainActivity.kt:        // Grid
+./app/src/main/java/com/example/MainActivity.kt:    val firstDayOfWeek = calendar.get(java.util.Calendar.DAY_OF_WEEK) - 1 // 0 = Sun, 1 = Mon...
+./app/src/main/java/com/example/MainActivity.kt:            // Days of week header
+./app/src/main/java/com/example/MainActivity.kt:        // Avatar
+./app/src/main/java/com/example/MainActivity.kt:        // Stats & Analytics Button
+./app/src/main/java/com/example/MainActivity.kt:        // Achievements Button
+./app/src/main/java/com/example/MainActivity.kt:        // Rewards Shop Button
+./app/src/main/java/com/example/MainActivity.kt:        // Settings Button
+./app/src/main/java/com/example/MainActivity.kt:        // Privacy Policy Button
+./app/src/main/java/com/example/MainActivity.kt:        // Badge
+./app/src/main/java/com/example/MainActivity.kt:        // Toggle Card
+./app/src/main/java/com/example/MainActivity.kt:    // Define colors
+./app/src/main/java/com/example/MainActivity.kt:        // Top Bar
+./app/src/main/java/com/example/MainActivity.kt:                // Avatar placeholder
+./app/src/main/java/com/example/MainActivity.kt:        // Greeting
+./app/src/main/java/com/example/MainActivity.kt:        // Study Goal Card
+./app/src/main/java/com/example/MainActivity.kt:        // Level Card
+./app/src/main/java/com/example/MainActivity.kt:                // Quick actions
+./app/src/main/java/com/example/MainActivity.kt:        // Recent Tasks
+./app/src/main/java/com/example/MainActivity.kt:    // Define colors
+./app/src/main/java/com/example/MainActivity.kt:    // Smooth UI animations
+./app/src/main/java/com/example/MainActivity.kt:        // Session Complete Banner
+./app/src/main/java/com/example/MainActivity.kt:        // Pill Buttons
+./app/src/main/java/com/example/MainActivity.kt:        // Circular Timer
+./app/src/main/java/com/example/MainActivity.kt:        // Control buttons
+./app/src/main/java/com/example/MainActivity.kt:                // Pause / Resume Button
+./app/src/main/java/com/example/MainActivity.kt:                // Skip / Break Focus Button
+./app/src/main/java/com/example/MainActivity.kt:            // Lock in now button
+./app/src/main/java/com/example/MainActivity.kt:        // Ambient Sounds Panel
+./app/src/main/java/com/example/MainActivity.kt:        // Focus Mode Panel
+./app/src/main/java/com/example/MainActivity.kt:    var priority by remember { mutableStateOf("Medium") } // High, Medium, Low
+./app/src/main/java/com/example/MainActivity.kt:    // Define colors
+./app/src/main/java/com/example/MainActivity.kt:        // Tasks Progress Card
+./app/src/main/java/com/example/MainActivity.kt:        // Add task Form
+./app/src/main/java/com/example/MainActivity.kt:                    // Gradient Button
+./app/src/main/java/com/example/MainActivity.kt:    var selectedColorHex by remember { mutableStateOf("#00FFCC") } // Default neon green
+./app/src/main/java/com/example/MainActivity.kt:    var priority by remember { mutableStateOf("Medium") } // High, Medium, Low
+./app/src/main/java/com/example/MainActivity.kt:        "#00FFCC", // Neon Green
+./app/src/main/java/com/example/MainActivity.kt:        "#38BDF8", // Electric Blue
+./app/src/main/java/com/example/MainActivity.kt:        "#A855F7", // Purple
+./app/src/main/java/com/example/MainActivity.kt:        "#FF5555", // Hot Pink
+./app/src/main/java/com/example/MainActivity.kt:        "#FFCC00", // Vivid Yellow
+./app/src/main/java/com/example/MainActivity.kt:        "#FB923C" // Soft Orange
+./app/src/main/java/com/example/MainActivity.kt:    // Define colors
+./app/src/main/java/com/example/MainActivity.kt:        // Form Card
+./app/src/main/java/com/example/MainActivity.kt:                    // Task Add Button
+./app/src/main/java/com/example/MainActivity.kt:        // Plan List
+./app/src/main/java/com/example/MainActivity.kt:        // Add goal Form
+./app/src/main/java/com/example/MainActivity.kt:    // Colors
+./app/src/main/java/com/example/MainActivity.kt:        // Quick & Detailed Note Cards
+./app/src/main/java/com/example/MainActivity.kt:        // Saved Notes List
+./app/src/main/java/com/example/MainActivity.kt:    var selectedOption by remember { mutableStateOf<String?>(null) } // "1m", "2m", "3m", "custom"
+./app/src/main/java/com/example/MainActivity.kt:        // Logo-like indicator
+./app/src/main/java/com/example/MainActivity.kt:        // Option 1 month
+./app/src/main/java/com/example/MainActivity.kt:        // Option 2 months
+./app/src/main/java/com/example/MainActivity.kt:        // Option 3 months
+./app/src/main/java/com/example/MainActivity.kt:        // Custom option
+./app/src/main/java/com/example/MainActivity.kt:        // CTA Lock in button
+./app/src/main/java/com/example/MainActivity.kt:                // handle exceptions
+./app/src/main/java/com/example/MainActivity.kt:        // Rounded square container for lock icon
+./app/src/main/java/com/example/MainActivity.kt:        // Toggle Pills
+./app/src/main/java/com/example/MainActivity.kt:        // Gradient Button
+./app/src/main/java/com/example/MainActivity.kt:    // Pair of Message and isUser
+./app/src/main/java/com/example/MainActivity.kt:    // Black Theme
+./app/src/main/java/com/example/MainActivity.kt:        // Redesigned Top Bar
+./app/src/main/java/com/example/MainActivity.kt:        // Chat messages
+./app/src/main/java/com/example/MainActivity.kt:        // Suggested Chips
+./app/src/main/java/com/example/MainActivity.kt:        // Input field
+./app/src/main/res/drawable/ic_launcher_foreground.xml:<vector xmlns:android="http://schemas.android.com/apk/res/android"
+./app/src/main/res/drawable/ic_launcher_background.xml:<vector xmlns:android="http://schemas.android.com/apk/res/android"
+./app/src/main/res/xml/data_extraction_rules.xml:   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+./app/src/main/res/xml/backup_rules.xml:   See https://developer.android.com/guide/topics/data/autobackup
+./app/src/main/res/xml/backup_rules.xml:   See https://developer.android.com/about/versions/12/backup-restore
+./app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml:<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+./app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml:<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+./app/src/main/AndroidManifest.xml:<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+./app/src/main/AndroidManifest.xml:    xmlns:tools="http://schemas.android.com/tools">
+./app/src/test/java/com/example/ExampleUnitTest.kt: * See [testing documentation](http://d.android.com/tools/testing).
+./app/src/test/java/com/example/ExampleRobolectricTest.kt:        // Default should be not set
+./app/src/test/java/com/example/ExampleRobolectricTest.kt:        // Save 45 days commitment
+./app/src/test/java/com/example/ExampleRobolectricTest.kt:        // Clear commitment
+./app/src/test/java/com/example/ExampleRobolectricTest.kt:        // Process any initialization
+./app/src/test/java/com/example/ExampleRobolectricTest.kt:        // Initial state before DB finishes loading Flow might be null, but if populated must be 0
+./app/src/androidTest/java/com/example/ExampleInstrumentedTest.kt: * See [testing documentation](http://d.android.com/tools/testing).
+./app/src/androidTest/java/com/example/ExampleInstrumentedTest.kt:    // Context of the app under test.
+./app/proguard-rules.pro:#   http://developer.android.com/guide/developing/tools/proguard.html
+./app/build.gradle.kts:  id("org.jetbrains.kotlin.plugin.serialization") version "2.2.10" // Use same kotlin version
+./app/build.gradle.kts:// Configure the Secrets Gradle Plugin to use .env and .env.example files
+./app/build.gradle.kts:// to match the convention used in Web projects.
+./app/build.gradle.kts:// Some unused dependencies are commented out below instead of being removed.
+./app/build.gradle.kts:// This makes it easy to add them back in the future if needed.
+./app/build.gradle.kts:  // implementation(libs.accompanist.permissions)
+./app/build.gradle.kts:  // implementation(libs.androidx.camera.camera2)
+./app/build.gradle.kts:  // implementation(libs.androidx.camera.core)
+./app/build.gradle.kts:  // implementation(libs.androidx.camera.lifecycle)
+./app/build.gradle.kts:  // implementation(libs.androidx.camera.view)
+./app/build.gradle.kts:  // implementation(libs.androidx.datastore.preferences)
+./app/build.gradle.kts:  // implementation(libs.coil.compose)
+./app/build.gradle.kts:  // implementation(libs.firebase.ai)
+./app/build.gradle.kts:  // implementation(libs.play.services.location)
+./build.gradle.kts:// Top-level build file where you can add configuration options common to all sub-projects/modules.
+./gradle.properties:# http://www.gradle.org/docs/current/userguide/build_environment.html
+./gradle.properties:# https://developer.android.com/r/tools/gradle-multi-project-decoupled-projects

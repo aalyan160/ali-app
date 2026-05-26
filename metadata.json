@@ -1,0 +1,8 @@
+{
+  "name": "Remix: LockedIn",
+  "description": "Unlock your productivity and stay LockedIn with this empty starter template, fully configured with Material Design 3, Jetpack Navigation, and ViewModel + LiveData.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
